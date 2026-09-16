@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Rising chart bars -->
+  <path d="M8 36V28h5v8H8Zm9 0V22h5v14h-5Zm9 0V16h5v20h-5Zm9 0V10h5v26h-5Z" fill="#EFF2F9"/>
+  <!-- Trend arrow -->
+  <path d="M14 24.5 22.5 16l5.2 5.2L38 11" stroke="#EFF2F9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.5 11H38v6.5" stroke="#EFF2F9" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
