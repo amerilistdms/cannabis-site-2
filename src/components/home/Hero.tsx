@@ -97,9 +97,9 @@ export function Hero() {
 
       gsap.fromTo(
         photo,
-        { yPercent: -6, scale: 1.04 },
+        { yPercent: -4, scale: 1.06 },
         {
-          yPercent: 10,
+          yPercent: 6,
           scale: 1,
           ease: "none",
           scrollTrigger: {
@@ -115,8 +115,8 @@ export function Hero() {
         stage,
         { y: 0, autoAlpha: 1 },
         {
-          y: -48,
-          autoAlpha: 0.35,
+          y: -36,
+          autoAlpha: 0.4,
           ease: "none",
           scrollTrigger: {
             trigger: track,
@@ -142,12 +142,15 @@ export function Hero() {
               alt=""
               fill
               priority
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 760px"
+              className="object-cover"
+              sizes="100vw"
             />
           </div>
           <div className="cannabis-hero__photo-fade" />
         </div>
+
+        <div className="cannabis-hero__atmosphere" aria-hidden />
+        <div className="cannabis-hero__grain" aria-hidden />
 
         <div ref={stageRef} className="cannabis-hero__stage">
           <div className="relative mx-auto flex w-full max-w-[1120px] flex-col gap-10 px-5 py-12 md:px-10 md:py-16 lg:gap-14 lg:py-20">

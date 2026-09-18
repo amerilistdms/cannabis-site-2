@@ -145,6 +145,34 @@ body {
   -webkit-backdrop-filter: blur(18px) saturate(1.25);
 }
 
+/* Apple-like floating nav material */
+.nav-pill {
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.06),
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-pill-menu {
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.06),
+    0 18px 40px rgba(0, 0, 0, 0.12),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.9);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .nav-pill,
+  .nav-pill-menu {
+    background: rgba(255, 255, 255, 0.94);
+  }
+}
+
 [data-hero],
 [data-reveal]:not(:has([data-reveal-child])),
 [data-reveal-child] {
