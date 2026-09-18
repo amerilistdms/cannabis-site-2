@@ -80,11 +80,11 @@ export function Hero() {
       <div className="cannabis-hero__photo" aria-hidden>
         <div className="cannabis-hero__photo-img">
           <Image
-            src="/images/custom/hero-grow.jpg"
+            src="/images/custom/hero-analytics.jpg"
             alt=""
             fill
             priority
-            className="object-cover object-[center_35%]"
+            className="object-cover object-[center_40%]"
             sizes="(max-width: 1024px) 100vw, 980px"
           />
         </div>
@@ -109,11 +109,13 @@ export function Hero() {
             </p>
           </div>
 
-          <div data-hero className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-8">
-            <ArrowButton href="/contact#contact-form" variant="outline-white" accent="blue">
-              Request a Free Market Analysis
-            </ArrowButton>
-            <p className="text-sm text-frost/55">No obligation. Free counts available.</p>
+          <div data-hero className="flex flex-col items-start gap-6">
+            <div className="flex flex-col items-start gap-3">
+              <ArrowButton href="/contact#contact-form" variant="outline-white" accent="blue">
+                Request a Free Market Analysis
+              </ArrowButton>
+              <p className="text-sm text-frost/55">No obligation. Free counts available.</p>
+            </div>
             <BookACall className="lg:hidden" />
           </div>
 

@@ -16,7 +16,6 @@ const links = [
 
 type HeaderProps = {
   overDark?: boolean;
-  solidAfterHero?: boolean;
 };
 
 function isActive(pathname: string, href: string) {
@@ -27,24 +26,17 @@ function isActive(pathname: string, href: string) {
   );
 }
 
-export function Header({ overDark = true, solidAfterHero = false }: HeaderProps) {
+export function Header({ overDark = true }: HeaderProps) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const onScroll = () => {
-      const threshold = solidAfterHero ? Math.max(window.innerHeight - 96, 200) : 24;
-      setScrolled(window.scrollY > threshold);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 16);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
-  }, [solidAfterHero]);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     setOpen(false);
@@ -58,7 +50,7 @@ export function Header({ overDark = true, solidAfterHero = false }: HeaderProps)
       <div
         className={`pointer-events-auto relative w-full max-w-[1120px] transition-all duration-300 ease-out ${
           solid
-            ? "rounded-full border border-navy/10 bg-frost/70 shadow-[0_12px_40px_rgba(25,28,51,0.12)] backdrop-blur-xl"
+            ? "rounded-full border border-white/50 bg-white/35 shadow-[0_8px_32px_rgba(25,28,51,0.12)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/25"
             : "rounded-full border border-transparent bg-transparent"
         }`}
       >
@@ -85,7 +77,7 @@ export function Header({ overDark = true, solidAfterHero = false }: HeaderProps)
                     active
                       ? "font-semibold text-green"
                       : solid
-                        ? "text-foreground/75 hover:text-foreground"
+                        ? "text-foreground/80 hover:text-foreground"
                         : "text-frost/80 hover:text-frost"
                   }`}
                 >
@@ -127,11 +119,7 @@ export function Header({ overDark = true, solidAfterHero = false }: HeaderProps)
         </div>
 
         {open && (
-          <div
-            className={`absolute inset-x-0 top-[calc(100%+0.5rem)] overflow-hidden rounded-3xl border border-navy/10 bg-frost/95 px-4 py-4 shadow-[0_16px_48px_rgba(25,28,51,0.14)] backdrop-blur-xl lg:hidden ${
-              solid ? "" : "ring-1 ring-white/20"
-            }`}
-          >
+          <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] overflow-hidden rounded-3xl border border-white/50 bg-white/40 px-4 py-4 shadow-[0_16px_48px_rgba(25,28,51,0.14)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/30 lg:hidden">
             <nav className="flex flex-col gap-1">
               {links.map((link) => (
                 <Link
