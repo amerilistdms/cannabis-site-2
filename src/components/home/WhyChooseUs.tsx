@@ -7,49 +7,49 @@ import { ArrowButton } from "@/components/ArrowButton";
 const offerings = [
   {
     title: "Postal Mailing Lists",
-    image: "/images/figma/card-1.png",
+    image: "/images/custom/wcu-1.jpg",
     description:
       "Reach targeted households with accurate postal mailing lists built around your ideal audience.",
   },
   {
     title: "Consumer Email Lists",
-    image: "/images/figma/card-2.png",
+    image: "/images/custom/wcu-2.jpg",
     description:
       "Connect with relevant consumers through targeted email lists tailored to your audience.",
   },
   {
     title: "Phone Numbers",
-    image: "/images/figma/card-3.png",
+    image: "/images/custom/wcu-3.jpg",
     description:
       "Access quality phone data to connect with prospects through targeted outreach campaigns.",
   },
   {
     title: "Digital Audience Targeting",
-    image: "/images/figma/card-4.png",
+    image: "/images/custom/wcu-4.jpg",
     description:
       "Reach the right digital audiences with data-driven targeting built around your campaign goals.",
   },
   {
     title: "Custom Audience Matching",
-    image: "/images/figma/card-5.png",
+    image: "/images/custom/wcu-5.jpg",
     description:
       "Match your customer data with targeted audiences to expand reach and improve campaign performance.",
   },
   {
     title: "Direct Mail Campaign Support",
-    image: "/images/figma/card-6.png",
+    image: "/images/custom/wcu-6.jpg",
     description:
       "Simplify your direct mail campaigns with audience selection, data, and campaign support.",
   },
   {
     title: "Permission Based Email Marketing",
-    image: "/images/figma/card-7.png",
+    image: "/images/custom/wcu-7.jpg",
     description:
       "Engage opted-in audiences with permission-based email marketing designed for meaningful outreach.",
   },
   {
     title: "Audience Modeling & Profiling",
-    image: "/images/figma/card-8.png",
+    image: "/images/custom/wcu-8.jpg",
     description:
       "Understand your ideal customers through detailed audience profiles and predictive modeling.",
   },

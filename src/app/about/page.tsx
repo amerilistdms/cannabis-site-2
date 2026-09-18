@@ -141,7 +141,7 @@ export default function AboutPage() {
               className="relative aspect-[16/11] overflow-hidden rounded-[28px]"
             >
               <Image
-                src="/images/blog/article-hero.jpg"
+                src="/images/custom/about-heritage.jpg"
                 alt="Marketing team reviewing audience data and campaign performance"
                 fill
                 className="object-cover object-[center_25%]"
