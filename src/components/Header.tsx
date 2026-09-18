@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 
 const links = [
   { href: "/home", label: "Home" },
@@ -24,6 +24,12 @@ function isActive(pathname: string, href: string) {
     (href === "/home" && pathname === "/") ||
     (href !== "/home" && pathname.startsWith(`${href}/`))
   );
+}
+
+function scrollTopIfCurrent(pathname: string, href: string, e: MouseEvent) {
+  if (!isActive(pathname, href)) return;
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 export function Header({ overDark = true }: HeaderProps) {
@@ -80,6 +86,7 @@ export function Header({ overDark = true }: HeaderProps) {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={(e) => scrollTopIfCurrent(pathname, link.href, e)}
                   className={`relative text-[13px] tracking-[-0.01em] transition-colors ${
                     active
                       ? "font-semibold text-green"
@@ -129,7 +136,10 @@ export function Header({ overDark = true }: HeaderProps) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    setOpen(false);
+                    scrollTopIfCurrent(pathname, link.href, e);
+                  }}
                   className={`rounded-xl px-3 py-2.5 text-sm ${
                     isActive(pathname, link.href)
                       ? "bg-green/10 font-semibold text-green"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -34,8 +35,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${fraunces.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased font-sans">{children}</body>
+    <html
+      lang="en"
+      data-scroll-behavior="smooth"
+      className={`${jakarta.variable} ${fraunces.variable} h-full`}
+    >
+      <body className="min-h-full flex flex-col antialiased font-sans">
+        <ScrollToTop />
+        {children}
+      </body>
     </html>
   );
 }
