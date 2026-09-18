@@ -81,17 +81,15 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div
-              data-reveal-child
-              className="relative aspect-[4/5] overflow-hidden rounded-[28px] md:aspect-[5/6]"
-            >
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-navy-hero/10 md:aspect-[5/4]">
               <Image
                 src="/images/about/about.jpg"
                 alt="Professional cannabis retail consultation at a dispensary counter"
                 fill
-                className="object-cover object-center"
-                sizes="(max-width: 768px) 100vw, 520px"
                 priority
+                unoptimized
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 560px"
               />
             </div>
           </div>
