@@ -5,10 +5,15 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ScrollEffects } from "@/components/ScrollEffects";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About | Cannabis Email Lists",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "About",
+  description:
+    "Learn how Cannabis Email Lists, a division of AmeriList, helps marketers reach qualified cannabis audiences with reliable opt-in data since 2002.",
+  path: "/about",
+  image: "/images/about/about.jpg",
+});
 
 const pillars = [
   {

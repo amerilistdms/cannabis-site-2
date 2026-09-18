@@ -5,10 +5,14 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ScrollEffects } from "@/components/ScrollEffects";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "List Options | Cannabis Email Lists",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "List Options",
+  description:
+    "Browse cannabis users, medical patients, CBD audiences, investors, lifestyle enthusiasts, industry professionals, and geographic market lists.",
+  path: "/list-options",
+});
 
 const lists = [
   {

@@ -5,10 +5,14 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { PageHero } from "@/components/PageHero";
 import { ScrollEffects } from "@/components/ScrollEffects";
+import { createPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services | Cannabis Email Lists",
-};
+export const metadata: Metadata = createPageMetadata({
+  title: "Services",
+  description:
+    "Cannabis consumer lists, email and mailing lists, audience profiling, modeling, data enhancement, and multichannel marketing support from AmeriList.",
+  path: "/services",
+});
 
 const services = [
   {
