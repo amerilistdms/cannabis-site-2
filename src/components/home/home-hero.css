@@ -28,7 +28,7 @@
 
 .cannabis-hero__photo-img img {
   object-fit: cover;
-  object-position: 72% center;
+  object-position: calc(100% + 180px) center;
 }
 
 /* Wide cinematic blend — no hard seam through the photo */
