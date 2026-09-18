@@ -20,7 +20,7 @@ export const posts: Post[] = [
     slug: "how-cannabis-industry-data-gets-compiled",
     category: "Cannabis Industry Data",
     title: "How Cannabis Industry Data Gets Compiled",
-    image: "/images/blog/article-hero.jpg",
+    image: "/images/custom/blog-hero.jpg",
     excerpt:
       "If you're buying a cannabis email list, the first question worth asking is where the records came from. Most providers answer it vaguely, and the answer matters more in this industry than in almost any other.",
     content: [
