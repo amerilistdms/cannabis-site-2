@@ -53,8 +53,8 @@ export function Accuracy() {
             className="relative mx-auto aspect-square w-full max-w-[420px] overflow-hidden rounded-[40px] bg-frost lg:max-w-none"
           >
             <Image
-              src="/images/custom/accuracy.jpg"
-              alt="Cannabis plants in a professional cultivation facility"
+              src="/images/home/accuracy.jpg"
+              alt="Cannabis marketing accuracy and audience targeting"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 420px, 480px"
