@@ -50,8 +50,8 @@ export function Header({ overDark = true }: HeaderProps) {
       <div
         className={`pointer-events-auto relative w-full max-w-[1120px] transition-all duration-300 ease-out ${
           solid
-            ? "rounded-full border border-white/50 bg-white/35 shadow-[0_8px_32px_rgba(25,28,51,0.12)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/25"
-            : "rounded-full border border-transparent bg-transparent"
+            ? "rounded-full border-0 bg-white/35 shadow-[0_8px_32px_rgba(25,28,51,0.12)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/25"
+            : "rounded-full border-0 bg-transparent"
         }`}
       >
         <div className="flex h-14 items-center justify-between gap-3 px-4 sm:h-16 sm:px-5 md:px-6">
@@ -119,7 +119,7 @@ export function Header({ overDark = true }: HeaderProps) {
         </div>
 
         {open && (
-          <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] overflow-hidden rounded-3xl border border-white/50 bg-white/40 px-4 py-4 shadow-[0_16px_48px_rgba(25,28,51,0.14)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/30 lg:hidden">
+          <div className="absolute inset-x-0 top-[calc(100%+0.5rem)] overflow-hidden rounded-3xl border-0 bg-white/40 px-4 py-4 shadow-[0_16px_48px_rgba(25,28,51,0.14)] backdrop-blur-2xl supports-[backdrop-filter]:bg-white/30 lg:hidden">
             <nav className="flex flex-col gap-1">
               {links.map((link) => (
                 <Link

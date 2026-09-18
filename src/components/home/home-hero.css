@@ -1,14 +1,24 @@
-/* Home hero — photo soft-blends into navy */
+/* Home hero — soft navy field + pinned parallax photo */
+
+.cannabis-hero-track {
+  position: relative;
+  height: 170vh;
+}
 
 .cannabis-hero {
-  position: relative;
+  position: sticky;
+  top: 0;
   display: flex;
   width: 100%;
-  min-height: 100svh;
-  min-height: 100dvh;
+  height: 100svh;
+  height: 100dvh;
   flex-direction: column;
   overflow: hidden;
-  background: #191c33;
+  background:
+    radial-gradient(ellipse 70% 55% at 12% 42%, rgba(60, 107, 59, 0.22), transparent 58%),
+    radial-gradient(ellipse 55% 45% at 0% 78%, rgba(0, 112, 171, 0.14), transparent 52%),
+    radial-gradient(ellipse 40% 35% at 28% 12%, rgba(239, 242, 249, 0.05), transparent 60%),
+    linear-gradient(115deg, #15182b 0%, #191c33 42%, #1c2040 100%);
   color: #eff2f9;
 }
 
@@ -17,46 +27,46 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  will-change: transform;
 }
 
 .cannabis-hero__photo-img {
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  width: min(70%, 980px);
-  height: 100%;
+  width: min(56%, 760px);
+  height: min(68%, 620px);
+  transform: translateY(-50%);
+  border-radius: 0;
+  overflow: hidden;
   -webkit-mask-image:
     linear-gradient(
       90deg,
       transparent 0%,
-      rgba(0, 0, 0, 0.15) 12%,
-      rgba(0, 0, 0, 0.55) 28%,
-      rgba(0, 0, 0, 0.9) 48%,
-      #000 72%
+      rgba(0, 0, 0, 0.2) 14%,
+      rgba(0, 0, 0, 0.7) 36%,
+      #000 62%
     ),
     linear-gradient(
       180deg,
       transparent 0%,
-      #000 14%,
-      #000 72%,
-      rgba(0, 0, 0, 0.45) 88%,
+      #000 12%,
+      #000 82%,
       transparent 100%
     );
   mask-image:
     linear-gradient(
       90deg,
       transparent 0%,
-      rgba(0, 0, 0, 0.15) 12%,
-      rgba(0, 0, 0, 0.55) 28%,
-      rgba(0, 0, 0, 0.9) 48%,
-      #000 72%
+      rgba(0, 0, 0, 0.2) 14%,
+      rgba(0, 0, 0, 0.7) 36%,
+      #000 62%
     ),
     linear-gradient(
       180deg,
       transparent 0%,
-      #000 14%,
-      #000 72%,
-      rgba(0, 0, 0, 0.45) 88%,
+      #000 12%,
+      #000 82%,
       transparent 100%
     );
   -webkit-mask-composite: source-in;
@@ -64,7 +74,8 @@
 }
 
 .cannabis-hero__photo-img img {
-  object-position: 55% center;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .cannabis-hero__photo-fade {
@@ -73,45 +84,56 @@
   background:
     linear-gradient(
       90deg,
-      #191c33 0%,
-      #191c33 28%,
-      rgba(25, 28, 51, 0.92) 40%,
-      rgba(25, 28, 51, 0.55) 55%,
-      rgba(25, 28, 51, 0.22) 72%,
-      rgba(25, 28, 51, 0.06) 88%,
+      rgba(25, 28, 51, 0.95) 0%,
+      rgba(25, 28, 51, 0.78) 26%,
+      rgba(25, 28, 51, 0.35) 48%,
+      rgba(25, 28, 51, 0.1) 68%,
       transparent 100%
     ),
     linear-gradient(
       180deg,
-      rgba(25, 28, 51, 0.45) 0%,
-      rgba(25, 28, 51, 0.12) 18%,
-      transparent 36%,
-      transparent 68%,
-      rgba(25, 28, 51, 0.35) 88%,
-      #191c33 100%
+      rgba(25, 28, 51, 0.35) 0%,
+      transparent 22%,
+      transparent 70%,
+      rgba(25, 28, 51, 0.4) 100%
     );
 }
 
 @media (max-width: 1023px) {
+  .cannabis-hero-track {
+    height: auto;
+  }
+
+  .cannabis-hero {
+    position: relative;
+    height: auto;
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+
   .cannabis-hero__photo-img {
+    top: 0;
+    right: 0;
     width: 100%;
-    opacity: 0.55;
+    height: 100%;
+    transform: none;
+    opacity: 0.42;
     -webkit-mask-image: linear-gradient(
       180deg,
       transparent 0%,
-      rgba(0, 0, 0, 0.4) 12%,
-      #000 32%,
-      #000 58%,
-      rgba(0, 0, 0, 0.35) 78%,
+      rgba(0, 0, 0, 0.35) 14%,
+      #000 36%,
+      #000 62%,
+      rgba(0, 0, 0, 0.3) 82%,
       transparent 100%
     );
     mask-image: linear-gradient(
       180deg,
       transparent 0%,
-      rgba(0, 0, 0, 0.4) 12%,
-      #000 32%,
-      #000 58%,
-      rgba(0, 0, 0, 0.35) 78%,
+      rgba(0, 0, 0, 0.35) 14%,
+      #000 36%,
+      #000 62%,
+      rgba(0, 0, 0, 0.3) 82%,
       transparent 100%
     );
     -webkit-mask-composite: source-over;
@@ -122,17 +144,17 @@
     background:
       linear-gradient(
         180deg,
-        rgba(25, 28, 51, 0.6) 0%,
-        rgba(25, 28, 51, 0.45) 28%,
-        rgba(25, 28, 51, 0.7) 55%,
-        rgba(25, 28, 51, 0.92) 78%,
+        rgba(25, 28, 51, 0.55) 0%,
+        rgba(25, 28, 51, 0.4) 30%,
+        rgba(25, 28, 51, 0.72) 58%,
+        rgba(25, 28, 51, 0.94) 82%,
         #191c33 100%
       ),
       linear-gradient(
         90deg,
-        #191c33 0%,
-        rgba(25, 28, 51, 0.75) 45%,
-        rgba(25, 28, 51, 0.25) 100%
+        rgba(25, 28, 51, 0.88) 0%,
+        rgba(25, 28, 51, 0.45) 55%,
+        rgba(25, 28, 51, 0.2) 100%
       );
   }
 }
@@ -146,4 +168,5 @@
   justify-content: center;
   width: 100%;
   padding-top: 5rem;
+  will-change: transform, opacity;
 }
