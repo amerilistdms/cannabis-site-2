@@ -86,8 +86,8 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden rounded-[28px] md:aspect-[5/6]"
             >
               <Image
-                src="/images/custom/about-team.jpg"
-                alt="Cannabis plant foliage in soft natural light"
+                src="/images/about/about.jpg"
+                alt="Professional cannabis retail consultation at a dispensary counter"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 520px"

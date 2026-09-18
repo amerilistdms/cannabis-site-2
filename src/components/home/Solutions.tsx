@@ -93,13 +93,13 @@ export function Solutions() {
                 Cannabis Marketing Campaign
               </span>
             </h2>
-            <div className="mt-12 flex justify-center md:mt-16 md:justify-start">
+            <div className="mt-12 flex justify-center md:mt-16">
               <Image
                 src="/images/figma/leaf-deco-1.svg"
                 alt=""
                 width={200}
                 height={260}
-                className="h-[160px] w-auto rotate-[18deg] opacity-45 brightness-0 invert md:h-[200px]"
+                className="h-[160px] w-auto opacity-45 brightness-0 invert md:h-[200px]"
               />
             </div>
           </div>

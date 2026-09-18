@@ -78,11 +78,11 @@ export function Footer() {
               <p className="mb-2.5 text-2xl">Cannabis Email Lists</p>
               <div className="mb-5 flex items-start gap-3">
                 <Image
-                  src="/images/figma/leaf-stroke.svg"
+                  src="/images/home/cannabis green blue.svg"
                   alt=""
                   width={22}
                   height={28}
-                  className="mt-0.5 h-7 w-auto shrink-0 brightness-0 invert opacity-90"
+                  className="mt-0.5 h-7 w-auto shrink-0"
                 />
                 <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-frost/80">
                   Cannabis marketing starts with reaching the right audience.
