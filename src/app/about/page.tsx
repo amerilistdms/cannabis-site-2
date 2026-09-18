@@ -86,8 +86,8 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden rounded-[28px] md:aspect-[5/6]"
             >
               <Image
-                src="/images/home/Custom Audience Matching.jpg"
-                alt="Cannabis marketers collaborating on audience matching and campaign strategy"
+                src="/images/custom/about-team.jpg"
+                alt="Marketing team collaborating on cannabis audience strategy"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 520px"

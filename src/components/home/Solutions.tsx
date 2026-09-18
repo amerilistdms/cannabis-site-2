@@ -83,13 +83,14 @@ export function Solutions() {
     <div ref={trackRef} className="relative z-0 h-[320vh]">
       <section className="sticky top-0 flex min-h-[100svh] items-center overflow-hidden bg-green text-frost">
         <p
-          className="pointer-events-none absolute left-2 top-1/2 hidden -translate-y-1/2 select-none font-serif-accent text-[11vw] leading-none tracking-[0.08em] text-transparent [text-orientation:mixed] [writing-mode:vertical-rl] rotate-180 [-webkit-text-stroke:1.5px_rgba(239,242,249,0.28)] lg:left-4 lg:block lg:text-[4.5rem] xl:left-6 xl:text-[5.5rem]"
+          className="pointer-events-none absolute bottom-[8%] left-0 hidden select-none font-sans text-[clamp(3.5rem,8vh,6.5rem)] font-extrabold uppercase leading-[0.9] tracking-[0.12em] text-transparent [text-orientation:mixed] [writing-mode:vertical-rl] rotate-180 [-webkit-text-stroke:2px_rgba(239,242,249,0.42)] lg:block xl:text-[7rem]"
+          style={{ height: "84%" }}
           aria-hidden
         >
-          cannabis market list
+          CANNABIS MARKET LIST
         </p>
 
-        <div className="relative mx-auto grid w-full max-w-[1200px] gap-12 px-5 py-16 md:grid-cols-[1fr_1.2fr] md:gap-16 md:px-10 md:py-20 lg:pl-24">
+        <div className="relative mx-auto grid w-full max-w-[1200px] gap-12 px-5 py-16 md:grid-cols-[1fr_1.2fr] md:gap-16 md:px-10 md:py-20 lg:pl-28 xl:pl-36">
           <div>
             <h2 className="text-[32px] sm:text-[36px] md:text-[48px]">
               <span className="block font-light leading-[1.2] text-glow md:leading-[65px]">
