@@ -19,8 +19,6 @@ This is a B2B cannabis **marketing / lead-gen** site (not recreational consumer)
 - Nav glass should feel Apple-like: `saturate` + restrained blur, subtle hairline/shadow — not milky opaque frosted blobs
 - Heroes need atmosphere on empty fields (layered gradients, grain, vignettes) — never a flat dry navy slab
 - Imagery = professional marketing/data tone, not grow-room or bud product shots unless explicitly requested
-- **Never reuse photos from sibling AmeriList / cannabis projects.** Always download fresh assets into `public/images/custom/` with new Unsplash (or similar) sources unique to this repo
-- Do not recycle Figma export photos (`card-*.png`, shared blog heroes) for major section photography
 - Verify desktop + mobile; finish with commit + push
 
 If a visual result looks generic or unfinished, iterate before shipping.

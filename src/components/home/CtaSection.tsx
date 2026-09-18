@@ -44,7 +44,7 @@ export function CtaSection() {
           <div data-reveal-child className="flex w-full flex-col items-center gap-10">
             <div className="relative h-[220px] w-full overflow-hidden rounded-xl md:h-[295px]">
               <Image
-                src="/images/custom/cta-market.jpg"
+                src="/images/blog/article-hero.jpg"
                 alt="Marketer reviewing cannabis audience data for a campaign"
                 fill
                 className="object-cover object-[center_20%]"
