@@ -86,10 +86,10 @@ export default function AboutPage() {
               className="relative aspect-[4/5] overflow-hidden rounded-[28px] md:aspect-[5/6]"
             >
               <Image
-                src="/images/figma/card-4.png"
-                alt="Data-driven audience targeting for cannabis marketing"
+                src="/images/home/Custom Audience Matching.jpg"
+                alt="Cannabis marketers collaborating on audience matching and campaign strategy"
                 fill
-                className="object-cover"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 520px"
                 priority
               />

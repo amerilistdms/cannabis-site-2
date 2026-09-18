@@ -80,6 +80,16 @@ export function Hero() {
       <div className="cannabis-hero__aurora" aria-hidden>
         <div className="cannabis-hero__stripes" />
       </div>
+      <div className="cannabis-hero__photo" aria-hidden>
+        <Image
+          src="/images/figma/card-4.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-[68%_center]"
+          sizes="(max-width: 1024px) 100vw, 720px"
+        />
+      </div>
       <div className="cannabis-hero__glow cannabis-hero__glow--blue" aria-hidden />
       <div className="cannabis-hero__glow cannabis-hero__glow--green" aria-hidden />
       <div className="cannabis-hero__glow cannabis-hero__glow--blue-left" aria-hidden />
