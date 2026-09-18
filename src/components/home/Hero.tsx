@@ -10,11 +10,11 @@ export function Hero() {
       <div className="cannabis-hero__photo" aria-hidden>
         <div className="cannabis-hero__photo-img">
           <Image
-            src="/images/home/possiblehero.jpg"
+            src="/images/home/possiblehero2.jpg"
             alt=""
             fill
             priority
-            className="object-cover object-[78%_center]"
+            className="object-cover object-[70%_center]"
             sizes="(max-width: 1024px) 100vw, 720px"
           />
         </div>
