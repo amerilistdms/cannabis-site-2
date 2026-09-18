@@ -2,7 +2,8 @@
 
 .contact-hero {
   position: relative;
-  min-height: 100svh;
+  min-height: var(--hero-min-height, 100svh);
+  min-height: 100dvh;
   overflow: hidden;
   background: #0e1020;
   color: #eff2f9;

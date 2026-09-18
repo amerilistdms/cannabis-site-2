@@ -53,10 +53,10 @@ export function Accuracy() {
             className="relative mx-auto aspect-square w-full max-w-[420px] overflow-hidden rounded-[40px] bg-frost lg:max-w-none"
           >
             <Image
-              src="/images/figma/card-4.png"
-              alt="Precision audience targeting for cannabis marketing campaigns"
+              src="/images/custom/accuracy.jpg"
+              alt="Audience analytics and campaign performance data"
               fill
-              className="object-cover"
+              className="object-cover object-center"
               sizes="(max-width: 1024px) 420px, 480px"
             />
           </div>

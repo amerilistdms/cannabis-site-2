@@ -35,7 +35,7 @@ export default function ContactPage() {
           <div className="contact-hero__texture" aria-hidden />
           <div className="contact-hero__scrim" aria-hidden />
 
-          <div className="relative z-10 mx-auto flex min-h-[calc(100svh-5rem)] w-full max-w-[1200px] flex-col justify-between gap-12 px-5 pb-16 pt-10 md:gap-16 md:px-10 md:pb-20 md:pt-8">
+          <div className="relative z-10 mx-auto flex min-h-[calc(var(--hero-min-height,100svh)-5rem)] w-full max-w-[1200px] flex-col justify-between gap-12 px-5 pb-16 pt-10 md:gap-16 md:px-10 md:pb-20 md:pt-8">
             <div data-hero className="max-w-[730px] space-y-8">
               <h1>
                 <span className="block text-[32px] font-light leading-[1.15] text-frost sm:text-[48px] md:text-[60px] md:leading-[65px]">

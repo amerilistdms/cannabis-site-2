@@ -4,7 +4,8 @@
   position: relative;
   display: flex;
   width: 100%;
-  min-height: min(100svh, 720px);
+  min-height: var(--hero-min-height, 100svh);
+  min-height: 100dvh;
   flex-direction: column;
   overflow: hidden;
   background: #0e1020;
@@ -13,7 +14,8 @@
 }
 
 .page-hero--compact {
-  min-height: 0;
+  min-height: var(--hero-min-height, 100svh);
+  min-height: 100dvh;
 }
 
 .page-hero__aurora {

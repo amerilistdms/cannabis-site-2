@@ -9,6 +9,7 @@
   --blue: #0070ab;
   --frost: #eff2f9;
   --line: #1e1e1e;
+  --hero-min-height: 100svh;
 }
 
 @theme inline {

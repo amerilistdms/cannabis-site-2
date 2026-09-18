@@ -1,78 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { useId } from "react";
 import { ArrowButton } from "@/components/ArrowButton";
 import "./home-hero.css";
-
-function BookACall({ className = "" }: { className?: string }) {
-  const uid = useId().replace(/:/g, "");
-  const pathId = `bookCallPath-${uid}`;
-  const radius = 90;
-  const phrases = [0, 1, 2, 3] as const;
-
-  return (
-    <Link
-      href="/contact"
-      aria-label="Book a call"
-      className={`relative block size-[132px] shrink-0 transition-transform duration-500 ease-out hover:scale-[1.04] sm:size-[156px] lg:size-[180px] ${className}`}
-    >
-      <svg
-        viewBox="0 0 202 202"
-        className="animate-spin-slow absolute inset-0 size-full"
-        aria-hidden
-      >
-        <defs>
-          <path
-            id={pathId}
-            d={`M101,101 m-${radius},0 a${radius},${radius} 0 1,1 ${radius * 2},0 a${radius},${radius} 0 1,1 -${radius * 2},0`}
-            fill="none"
-          />
-        </defs>
-
-        {phrases.map((i) => (
-          <text
-            key={`phrase-${i}`}
-            fill="#EFF2F9"
-            fontSize="10.5"
-            fontFamily="var(--font-jakarta), sans-serif"
-            letterSpacing="1.2"
-            textAnchor="middle"
-          >
-            <textPath href={`#${pathId}`} startOffset={`${12.5 + i * 25}%`}>
-              BOOK A CALL
-            </textPath>
-          </text>
-        ))}
-
-        {phrases.map((i) => (
-          <text
-            key={`dot-${i}`}
-            fill="#EFF2F9"
-            fontSize="10.5"
-            fontFamily="var(--font-jakarta), sans-serif"
-            textAnchor="middle"
-          >
-            <textPath href={`#${pathId}`} startOffset={`${i * 25}%`}>
-              •
-            </textPath>
-          </text>
-        ))}
-      </svg>
-
-      <span className="pointer-events-none absolute left-1/2 top-[23%] h-[52.5%] w-[40.7%] -translate-x-1/2">
-        <Image
-          src="/images/figma/book-call-leaf.svg"
-          alt=""
-          fill
-          className="object-contain"
-          sizes="82px"
-        />
-      </span>
-    </Link>
-  );
-}
 
 export function Hero() {
   return (
@@ -112,20 +42,16 @@ export function Hero() {
             </p>
           </div>
 
-          <div data-hero className="flex flex-col items-start gap-6">
-            <div className="flex w-fit max-w-full flex-col items-center gap-3">
+          <div data-hero className="flex flex-col items-start gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <ArrowButton href="/contact#contact-form" variant="outline-white" accent="blue">
                 Request a Free Market Analysis
               </ArrowButton>
-              <p className="text-center text-sm text-frost/55">
-                No obligation. Free counts available.
-              </p>
+              <ArrowButton href="/contact" variant="outline-white" accent="green">
+                Book a Call
+              </ArrowButton>
             </div>
-            <BookACall className="lg:hidden" />
-          </div>
-
-          <div data-hero className="pointer-events-auto absolute bottom-8 right-5 hidden lg:block md:right-10">
-            <BookACall />
+            <p className="text-sm text-frost/55">No obligation. Free counts available.</p>
           </div>
         </div>
       </div>
