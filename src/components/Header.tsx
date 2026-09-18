@@ -53,7 +53,16 @@ export function Header({ overDark = true }: HeaderProps) {
         }`}
       >
         <div className="flex h-12 items-center justify-between gap-3 px-4 sm:h-14 sm:px-5 md:px-6">
-          <Link href="/home" className="relative z-50 shrink-0">
+          <Link
+            href="/home"
+            className="relative z-50 shrink-0"
+            onClick={(e) => {
+              if (pathname === "/home" || pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
+          >
             <Image
               src={solid ? "/images/logo nav colored.svg" : "/images/logo nav white.svg"}
               alt="AmeriList"
