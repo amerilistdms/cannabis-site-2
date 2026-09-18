@@ -54,7 +54,7 @@ export function Accuracy() {
           >
             <Image
               src="/images/custom/accuracy.jpg"
-              alt="Audience analytics and campaign performance data"
+              alt="Cannabis plants in a professional cultivation facility"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 420px, 480px"

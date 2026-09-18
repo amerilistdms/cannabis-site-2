@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowButton } from "./ArrowButton";
 
@@ -75,9 +76,18 @@ export function Footer() {
 
             <div className="w-full max-w-[393px]">
               <p className="mb-2.5 text-2xl">Cannabis Email Lists</p>
-              <p className="mb-3 text-sm leading-5 tracking-[0.14px] text-frost/90">
-                Cannabis marketing starts with reaching the right audience.
-              </p>
+              <div className="mb-5 flex items-start gap-3">
+                <Image
+                  src="/images/figma/leaf-stroke.svg"
+                  alt=""
+                  width={22}
+                  height={28}
+                  className="mt-0.5 h-7 w-auto shrink-0 brightness-0 invert opacity-90"
+                />
+                <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-frost/80">
+                  Cannabis marketing starts with reaching the right audience.
+                </p>
+              </div>
               <p className="mb-8 text-sm leading-5 tracking-[0.14px] text-frost/90">
                 Audience data and marketing lists that help cannabis brands generate leads through
                 email, direct mail, and digital acquisition campaigns.
