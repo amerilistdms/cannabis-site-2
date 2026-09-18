@@ -1,4 +1,4 @@
-/* Home hero — photo fades into navy, Medicare-style split */
+/* Home hero — photo soft-blends into navy */
 
 .cannabis-hero {
   position: relative;
@@ -23,12 +23,48 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: min(62%, 900px);
+  width: min(70%, 980px);
   height: 100%;
+  -webkit-mask-image:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.15) 12%,
+      rgba(0, 0, 0, 0.55) 28%,
+      rgba(0, 0, 0, 0.9) 48%,
+      #000 72%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      #000 14%,
+      #000 72%,
+      rgba(0, 0, 0, 0.45) 88%,
+      transparent 100%
+    );
+  mask-image:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.15) 12%,
+      rgba(0, 0, 0, 0.55) 28%,
+      rgba(0, 0, 0, 0.9) 48%,
+      #000 72%
+    ),
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      #000 14%,
+      #000 72%,
+      rgba(0, 0, 0, 0.45) 88%,
+      transparent 100%
+    );
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
 }
 
 .cannabis-hero__photo-img img {
-  object-position: 65% center;
+  object-position: 55% center;
 }
 
 .cannabis-hero__photo-fade {
@@ -38,41 +74,65 @@
     linear-gradient(
       90deg,
       #191c33 0%,
-      #191c33 34%,
-      rgba(25, 28, 51, 0.88) 48%,
-      rgba(25, 28, 51, 0.35) 68%,
-      rgba(25, 28, 51, 0.08) 85%,
+      #191c33 28%,
+      rgba(25, 28, 51, 0.92) 40%,
+      rgba(25, 28, 51, 0.55) 55%,
+      rgba(25, 28, 51, 0.22) 72%,
+      rgba(25, 28, 51, 0.06) 88%,
       transparent 100%
     ),
     linear-gradient(
       180deg,
-      rgba(25, 28, 51, 0.35) 0%,
-      transparent 28%,
-      transparent 72%,
-      rgba(25, 28, 51, 0.55) 100%
+      rgba(25, 28, 51, 0.45) 0%,
+      rgba(25, 28, 51, 0.12) 18%,
+      transparent 36%,
+      transparent 68%,
+      rgba(25, 28, 51, 0.35) 88%,
+      #191c33 100%
     );
 }
 
 @media (max-width: 1023px) {
   .cannabis-hero__photo-img {
     width: 100%;
-    opacity: 0.45;
+    opacity: 0.55;
+    -webkit-mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.4) 12%,
+      #000 32%,
+      #000 58%,
+      rgba(0, 0, 0, 0.35) 78%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.4) 12%,
+      #000 32%,
+      #000 58%,
+      rgba(0, 0, 0, 0.35) 78%,
+      transparent 100%
+    );
+    -webkit-mask-composite: source-over;
+    mask-composite: add;
   }
 
   .cannabis-hero__photo-fade {
     background:
       linear-gradient(
         180deg,
-        rgba(25, 28, 51, 0.55) 0%,
-        rgba(25, 28, 51, 0.72) 42%,
-        #191c33 78%,
+        rgba(25, 28, 51, 0.6) 0%,
+        rgba(25, 28, 51, 0.45) 28%,
+        rgba(25, 28, 51, 0.7) 55%,
+        rgba(25, 28, 51, 0.92) 78%,
         #191c33 100%
       ),
       linear-gradient(
         90deg,
         #191c33 0%,
-        rgba(25, 28, 51, 0.85) 40%,
-        rgba(25, 28, 51, 0.35) 100%
+        rgba(25, 28, 51, 0.75) 45%,
+        rgba(25, 28, 51, 0.25) 100%
       );
   }
 }

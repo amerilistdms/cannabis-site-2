@@ -80,12 +80,12 @@ export function Hero() {
       <div className="cannabis-hero__photo" aria-hidden>
         <div className="cannabis-hero__photo-img">
           <Image
-            src="/images/custom/hero-pro.jpg"
+            src="/images/custom/hero-grow.jpg"
             alt=""
             fill
             priority
-            className="object-cover object-[center_20%]"
-            sizes="(max-width: 1024px) 100vw, 900px"
+            className="object-cover object-[center_35%]"
+            sizes="(max-width: 1024px) 100vw, 980px"
           />
         </div>
         <div className="cannabis-hero__photo-fade" />
