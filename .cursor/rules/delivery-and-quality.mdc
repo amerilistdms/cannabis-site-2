@@ -1,0 +1,24 @@
+---
+description: Always commit/push after work; hold a high visual quality bar
+alwaysApply: true
+---
+
+# Cannabis site 2 — delivery & quality
+
+## Git delivery (mandatory)
+
+After finishing any substantive change (UI, copy, assets, config), **always create a git commit and push to `origin`** without waiting for the user to ask again. Do not leave finished work only local.
+
+Follow the repo commit protocol (status/diff/log, HEREDOC message, no force-push, no secrets).
+
+## Visual quality bar
+
+This is a B2B cannabis **marketing / lead-gen** site (not recreational consumer). Treat polish seriously:
+
+- Prefer deliberate, production-level composition over quick/vague CSS tweaks
+- Nav glass should feel Apple-like: `saturate` + restrained blur, subtle hairline/shadow — not milky opaque frosted blobs
+- Heroes need atmosphere on empty fields (layered gradients, grain, vignettes) — never a flat dry navy slab
+- Imagery = professional marketing/data tone, not grow-room or bud product shots unless explicitly requested
+- Verify desktop + mobile; finish with commit + push
+
+If a visual result looks generic or unfinished, iterate before shipping.
