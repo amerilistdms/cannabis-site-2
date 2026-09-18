@@ -87,7 +87,7 @@ export default function AboutPage() {
             >
               <Image
                 src="/images/custom/about-team.jpg"
-                alt="Marketing team collaborating on cannabis audience strategy"
+                alt="Cannabis plant foliage in soft natural light"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 520px"
@@ -141,10 +141,10 @@ export default function AboutPage() {
               className="relative aspect-[16/11] overflow-hidden rounded-[28px]"
             >
               <Image
-                src="/images/blog/article-hero.jpg"
-                alt="Marketing team reviewing audience data and campaign performance"
+                src="/images/custom/cta-cannabis.jpg"
+                alt="Professional cannabis cultivation facility"
                 fill
-                className="object-cover object-[center_25%]"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 560px"
               />
             </div>

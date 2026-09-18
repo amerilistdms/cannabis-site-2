@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { ArrowButton } from "@/components/ArrowButton";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
@@ -34,6 +35,18 @@ export default function ContactPage() {
           <div className="contact-hero__glow contact-hero__glow--green-left" aria-hidden />
           <div className="contact-hero__texture" aria-hidden />
           <div className="contact-hero__scrim" aria-hidden />
+
+          <div className="contact-hero__photo" aria-hidden>
+            <Image
+              src="/images/custom/contact-hero.jpg"
+              alt=""
+              fill
+              priority
+              className="object-cover object-[60%_center]"
+              sizes="520px"
+            />
+            <div className="contact-hero__photo-fade" />
+          </div>
 
           <div className="relative z-10 mx-auto flex min-h-[calc(var(--hero-min-height,100svh)-5rem)] w-full max-w-[1200px] flex-col justify-between gap-12 px-5 pb-16 pt-10 md:gap-16 md:px-10 md:pb-20 md:pt-8">
             <div data-hero className="max-w-[730px] space-y-8">

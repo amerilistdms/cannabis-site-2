@@ -46,6 +46,11 @@ const services = [
     icon: "/images/figma/svc-7.svg",
     copy: "Create highly specialized cannabis audiences based on your exact campaign requirements.",
   },
+  {
+    title: "Multichannel Marketing",
+    icon: "/images/figma/svc-1.svg",
+    copy: "Coordinate email, postal, phone, and digital channels with consistent cannabis audience data across every campaign touchpoint.",
+  },
 ];
 
 export default function ServicesPage() {

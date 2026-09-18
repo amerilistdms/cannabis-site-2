@@ -93,19 +93,6 @@ export function WhyChooseUs() {
   return (
     <section className="bg-frost py-20 md:py-28">
       <div className="mx-auto mb-14 w-full max-w-[1120px] px-5 md:mb-20 md:px-10">
-        <div data-reveal-child className="mb-8 flex max-w-[420px] items-start gap-3 md:mb-10">
-          <Image
-            src="/images/figma/leaf-stroke.svg"
-            alt=""
-            width={22}
-            height={28}
-            className="mt-0.5 h-7 w-auto shrink-0 opacity-80"
-          />
-          <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-foreground/60">
-            Cannabis marketing starts with reaching the right audience.
-          </p>
-        </div>
-
         <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-start lg:gap-16">
           <h2
             data-reveal-child

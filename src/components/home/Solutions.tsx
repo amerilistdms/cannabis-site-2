@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -92,6 +93,13 @@ export function Solutions() {
                 Cannabis Marketing Campaign
               </span>
             </h2>
+            <Image
+              src="/images/figma/leaf-stroke.svg"
+              alt=""
+              width={36}
+              height={46}
+              className="mt-6 h-11 w-auto opacity-90 brightness-0 invert md:mt-8 md:h-12"
+            />
           </div>
 
           <div className="flex w-full flex-col gap-8">

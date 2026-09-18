@@ -4,7 +4,7 @@ import { ArrowButton } from "./ArrowButton";
 const listOptions = [
   "Cannabis Users",
   "CBD Users",
-  "Medical MJ Patients",
+  "Medical Patients",
   "Cannabis Investors",
   "Dispensary Shoppers",
   "Industry Professionals",
@@ -18,6 +18,7 @@ const services = [
   "Audience Modeling",
   "Data Enhancement",
   "Custom Audiences",
+  "Multichannel Marketing",
 ];
 
 const company = [
@@ -74,6 +75,9 @@ export function Footer() {
 
             <div className="w-full max-w-[393px]">
               <p className="mb-2.5 text-2xl">Cannabis Email Lists</p>
+              <p className="mb-3 text-sm leading-5 tracking-[0.14px] text-frost/90">
+                Cannabis marketing starts with reaching the right audience.
+              </p>
               <p className="mb-8 text-sm leading-5 tracking-[0.14px] text-frost/90">
                 Audience data and marketing lists that help cannabis brands generate leads through
                 email, direct mail, and digital acquisition campaigns.
@@ -97,7 +101,7 @@ export function Footer() {
             </div>
           </div>
 
-          <p className="text-center text-[18px] leading-snug text-frost sm:text-[26px] md:text-[33px] md:leading-tight">
+          <p className="whitespace-nowrap text-center text-[clamp(13px,2.6vw,33px)] leading-none tracking-[-0.01em] text-frost">
             A division of AmeriList. Audience data &amp; marketing solutions since 2002
           </p>
         </div>
