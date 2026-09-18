@@ -14,8 +14,8 @@ export function Hero() {
             alt=""
             fill
             priority
-            className="object-cover object-[78%_center]"
-            sizes="(max-width: 1024px) 100vw, 820px"
+            className="object-cover object-[72%_center]"
+            sizes="100vw"
           />
         </div>
         <div className="cannabis-hero__photo-fade" />
