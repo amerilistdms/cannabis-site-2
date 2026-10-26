@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
   const meta = createPageMetadata({
     title: post.title,
-    description: post.excerpt,
+    description: post.seoDescription ?? post.excerpt,
     path: `/blog/${post.slug}`,
     image: post.image,
   });

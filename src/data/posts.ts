@@ -11,11 +11,124 @@ export type Post = {
   category: string;
   title: string;
   excerpt: string;
+  /** Meta description override; keep under ~160 characters. Falls back to `excerpt`. */
+  seoDescription?: string;
   image: string;
   content: ContentBlock[];
 };
 
 export const posts: Post[] = [
+  {
+    slug: "how-to-reach-cannabis-consumers-targeted-email-list",
+    category: "Cannabis Email Marketing",
+    title: "How to Reach Cannabis Consumers With a Targeted Cannabis Email List",
+    image: "/images/blog/article-hero.jpg",
+    excerpt:
+      "Marketing a cannabis or CBD brand isn’t like marketing most products. Many major ad platforms restrict cannabis advertising, and broad campaigns waste budget on people who will never buy. That’s why more brands are turning to a targeted cannabis email list to reach consumers directly.",
+    seoDescription:
+      "Reach cannabis and CBD consumers directly with a targeted, opt-in cannabis email list: who you can target, why opt-in works, and tips for better campaigns.",
+    content: [
+      {
+        type: "heading",
+        text: "Why Cannabis Brands Struggle With Traditional Advertising",
+      },
+      {
+        type: "paragraph",
+        text: "Dispensaries, CBD companies and cannabis accessory brands often find their ads rejected or limited on social media and search platforms. Even when ads run, targeting options are restricted, so you can’t always reach the people most likely to respond.",
+      },
+      {
+        type: "paragraph",
+        text: "Email gives you a direct line to the consumer. With the right cannabis mailing list, your message lands in front of people who have already shown interest in cannabis, CBD or wellness products.",
+      },
+      {
+        type: "heading",
+        text: "Who You Can Reach With Cannabis Email Lists",
+      },
+      {
+        type: "lead",
+        text: "A quality cannabis email list lets you choose the audience that fits your offer:",
+      },
+      {
+        type: "list",
+        items: [
+          "Cannabis users: consumers interested in cannabis products and lifestyle brands.",
+          "CBD buyers: a CBD email list helps wellness and CBD brands reach people who already purchase CBD products.",
+          "Dispensary shoppers: consumers who visit dispensaries, ideal for promoting new locations, deals and loyalty programs.",
+          "Medical marijuana patients: an audience for brands and services focused on the medical cannabis market.",
+          "Cannabis investors and enthusiasts: people following the industry, useful for cannabis businesses, events and financial offers.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Opt-In Email Leads Get Better Results",
+      },
+      {
+        type: "paragraph",
+        text: "Not all email lists are equal. Opt-in email leads come from consumers who have agreed to receive offers, which means better deliverability and stronger engagement.",
+      },
+      {
+        type: "callout",
+        text: "Sending to verified contacts also protects your sender reputation, so more of your emails reach the inbox instead of spam.",
+      },
+      {
+        type: "heading",
+        text: "Tips for a Successful Cannabis Email Campaign",
+      },
+      {
+        type: "lead",
+        text: "Choose a focused audience.",
+      },
+      {
+        type: "paragraph",
+        text: "A campaign to dispensary shoppers in a specific state will outperform a broad national send.",
+      },
+      {
+        type: "lead",
+        text: "Lead with value.",
+      },
+      {
+        type: "paragraph",
+        text: "Discounts, new product launches and educational content work well with cannabis consumers.",
+      },
+      {
+        type: "lead",
+        text: "Keep it compliant.",
+      },
+      {
+        type: "paragraph",
+        text: "Follow your state’s cannabis advertising rules and include a clear unsubscribe option in every email.",
+      },
+      {
+        type: "lead",
+        text: "Test and track.",
+      },
+      {
+        type: "paragraph",
+        text: "Watch opens, clicks and conversions, and adjust your subject lines and offers based on the results.",
+      },
+      {
+        type: "image",
+        src: "/images/blog/article-hero3.jpg",
+        alt: "Laptop showing a campaign analytics dashboard",
+      },
+      {
+        type: "heading",
+        text: "Combine Email With Direct Mail",
+      },
+      {
+        type: "paragraph",
+        text: "For even better response rates, pair your email campaign with cannabis direct mail. A postcard followed by an email reinforces your message and gives consumers two chances to respond.",
+      },
+      {
+        type: "heading",
+        text: "Get Started Today",
+      },
+      {
+        type: "paragraph",
+        text: "Cannabis Email Lists helps cannabis and CBD brands reach the right consumers with targeted, opt-in data. Request your free counts today to see how many cannabis consumers you can reach in your market.",
+      },
+    ],
+  },
   {
     slug: "how-cannabis-industry-data-gets-compiled",
     category: "Cannabis Industry Data",
